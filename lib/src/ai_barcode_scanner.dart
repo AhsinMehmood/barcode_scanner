@@ -278,6 +278,7 @@ class _AiBarcodeScannerState extends State<AiBarcodeScanner> {
             foregroundColor: Colors.white,
             title: Text('VIN Scanner'),
             elevation: 0,
+             centerTitle: true,
             leading: IconButton(
                 onPressed: () {
                   Navigator.pop(context);
