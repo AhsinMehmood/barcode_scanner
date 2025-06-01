@@ -276,12 +276,18 @@ class _AiBarcodeScannerState extends State<AiBarcodeScanner> {
           AppBar(
             backgroundColor: Colors.transparent,
             foregroundColor: Colors.white,
+            title: Text('VIN Scanner'),
             elevation: 0,
+            leading: IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: Icon(Icons.arrow_back_ios_new_outlined)),
             actions: [
-              IconButton(
-                icon: const Icon(Icons.cameraswitch_rounded),
-                onPressed: controller.switchCamera,
-              ),
+              // IconButton(
+              //   icon: const Icon(Icons.cameraswitch_rounded),
+              //   onPressed: controller.switchCamera,
+              // ),
               IconButton(
                 icon: controller.torchEnabled
                     ? const Icon(Icons.flashlight_off_rounded)
